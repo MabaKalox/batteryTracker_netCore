@@ -1,0 +1,16 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:BatteryTracker.ViewModels"
+        xmlns:views="clr-namespace:BatteryTracker.Views"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:Class="BatteryTracker.Views.MainWindow"
+        Icon="/Assets/icon_512x512.png"
+        Title="BatteryTracker"
+        Width="600" Height="400">
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+    <views:TodoList/>
+</Window>
